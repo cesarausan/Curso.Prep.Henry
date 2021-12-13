@@ -10,6 +10,18 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matriz = []
+  for (let propiedad in objeto) {
+    // crear un array vacio
+    var arr = []
+    //incluir el primer elemento
+    arr.push(propiedad)
+    //incluir el segundo elemento
+    arr.push(objeto[propiedad])
+    //incluir los elementos en la matriz
+    matriz.push(arr)
+  }
+  return matriz
 }
 
 
