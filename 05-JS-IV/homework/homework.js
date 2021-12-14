@@ -6,14 +6,14 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-var gato = {
-  nombre: nombre,
-  edad: edad,
-  meow: function (){
-    return 'Meow!'  
-  },
-}
-return gato
+  var gato = {
+    nombre: nombre,
+    edad: edad,
+    meow: function () {
+      return 'Meow!'
+    },
+  }
+  return gato
 }
 
 function agregarPropiedad(objeto, property) {
@@ -78,7 +78,7 @@ function tienePropiedad(objeto, propiedad) {
   // Tu código:
   //if (objeto[propiedad]) return true
   //return false
-  if (objeto.hasOwnProperty(propiedad)){
+  if (objeto.hasOwnProperty(propiedad)) {
     return true;
   }
   return false
@@ -117,7 +117,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for (let i=0; i< usuarios.length; i++){
+  for (let i = 0; i < usuarios.length; i++) {
     usuarios[i].esPremium = true
   }
   return usuarios
@@ -131,7 +131,7 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   var total = 0
-  for (let i = 0; i < usuario.posts.length; i++){
+  for (let i = 0; i < usuario.posts.length; i++) {
     total += usuario.posts[i].likes
   }
   return total
@@ -147,7 +147,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  producto.calcularPrecioDescuento = function (){
+  producto.calcularPrecioDescuento = function () {
     var descuento = this.precio * this.porcentajeDeDescuento
     return this.precio - descuento
   }
