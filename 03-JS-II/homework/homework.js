@@ -37,18 +37,27 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  switch (idioma) {
-    case "aleman":
-      return ("Guten Tag!");
-      break
-    case "mandarin":
-      return ("Ni Hao!");
-      break;
-    case "ingles":
-      return ("Hello!");
-      break;
-    default:
-      return "Hola!";
+  // switch (idioma) {
+  //   case "aleman":
+  //     return ("Guten Tag!");
+  //     break
+  //   case "mandarin":
+  //     return ("Ni Hao!");
+  //     break;
+  //   case "ingles":
+  //     return ("Hello!");
+  //     break;
+  //   default:
+  //     return "Hola!";
+  // }
+  if(idioma == "aleman"){
+    return "Guten Tag!";
+  } else if (idioma == "mandarin"){
+    return "Ni Hao!";
+  } else if (idioma == "ingles"){
+    return "Hello!";
+  } else {
+    return "Hola!";
   }
 }
 
@@ -98,8 +107,13 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero === Math.floor(numero)) return true;
-  else return false;
+  // if (numero === Math.floor(numero)) return true;
+  // else return false;
+  if(Number.isInteger(numero)){
+    return true;
+    } else {
+      return false;
+    }
 }
 
 function fizzBuzz(numero) {
@@ -186,14 +200,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var a = numero;
-  var i = 0;
+  //var a = numero;
+  //var i = 0;
+  let i = 0;
   do {
     i = i + 1;
-    a = a + 5;
+    numero = numero + 5;
   }
   while( i < 8);
-  return a;
+  return numero;
 }
 
 
