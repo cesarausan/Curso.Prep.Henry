@@ -15,6 +15,10 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  // let nuevoArray[];
+  // for (let i = 0; i < array.length; i++){
+
+  // }
 }
 
 
@@ -23,6 +27,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array
 }
 
 
@@ -109,7 +115,7 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var count =
+  var count = 0;
   for (var i=0; i < arreglo.lengh; i++){
     if(arreglo[i] > 18){
       //count += 1
@@ -125,8 +131,8 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia ===1 || numeroDeDia === 7) return "Es fin de semana"
-  else return "Es dia laboral"
+  if(numeroDeDia === 1 || numeroDeDia === 7) return "Es fin de semana"
+  else return "Es dia Laboral"
 } 
 
 
@@ -162,7 +168,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   let arreglo = []
-  for(var i=0; i array.lengh; i++){
+  for(var i=0; i < array.length; i++){
     if(array[i] === "Enero" || array[i] === "Marzo" ||array[i] === "Noviembre"){
       arreglo.push(array[i]);
     }
@@ -217,8 +223,8 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  var array = []
-  var suma = numero
+  var array = [];
+  var suma = numero;
 
   for (var i=0; i <10; i++){
     if (i === 5) continue
